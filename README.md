@@ -7,6 +7,8 @@ Requirements
    2. [Heroku Account](https://dashboard.heroku.com/login)
    3. [VS Code IDE](https://code.visualstudio.com/login)
    4. [GIT cli](https://git-scm.com/download)
+   5. [GIT DOCUMENTATION](https:/git-scm.com/docs/gittutorial)
+   
 
  Creating conda environment
  '''
@@ -55,6 +57,18 @@ To check remote url
 '''
 git remote -v
 '''
+
+To setup ci/CD pipeline in heroku we need 3 informations
+
+1. HEROKU_EMAIL     =amargajula123@gmail.com
+2. HEROKU_API_KE    =a29a9e91-0513-45b5-900e-7df11025697f
+3. HEROKU_APP_NAME  =my-regression-app
+
+Build docker image
+'''
+docker build -t <imag_name>:<tagname> .
+'''
+> Note : Image name for docker must be lowercase
 
 
 
