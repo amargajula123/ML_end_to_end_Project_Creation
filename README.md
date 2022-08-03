@@ -66,7 +66,7 @@ To setup ci/CD pipeline in heroku we need 3 informations
 
 Build docker image
 '''
-docker build -t <imag_name>:<tagname> .
+ <imag_name>:<tagname> .
 '''
 > Note : Image name for docker must be lowercase
 
