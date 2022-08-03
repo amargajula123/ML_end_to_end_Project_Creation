@@ -5,7 +5,7 @@ app=Flask(__name__)
 
 @app.route("/",methods=['GET','POST'])
 def index():
-        return "This is my first ML project"
+        return "this is my first deployment using triggers and docker with the hepl of git hub"
    
 
  
