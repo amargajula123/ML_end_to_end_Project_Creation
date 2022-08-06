@@ -1,10 +1,10 @@
-from setuptools import setup
+from setuptools import setup,find_packages
 from typing import List
 
 
 #Declaring variable for setup functions
 PROJECT_NAME="housing-predictor"
-VERSION="0.0.1"
+VERSION="0.0.3"
 AUTHOR="Amar"
 DESCRIPTION="This is the first FSDS nov batch ML project"
 PACKAGES=["housing"]
@@ -19,16 +19,14 @@ def get_requirements_list()->List[str]:
     libraries mentioned in requirements.txt file
     """
     with open(REQUIREMENTS_FILE_NAME) as requirement_file:
-        return requirement_file.readlines()
+        return requirement_file.readlines().remove("-e .")
+
 
 setup(
 name=PROJECT_NAME,
 version=VERSION,
 author=AUTHOR,
 description=DESCRIPTION,
-packages=PACKAGES,
+packages=find_packages(),
 install_requires=get_requirements_list()
 )
-
-
-

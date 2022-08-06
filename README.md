@@ -11,7 +11,7 @@
 
 Creating conda environment
 ```
-conda create -p venv python==3.7 -y
+conda create -p <envrn_name> python==3.7 -y
 ```
 ```
 conda activate venv/
