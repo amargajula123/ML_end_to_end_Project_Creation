@@ -75,7 +75,7 @@ class DataValidation:
             # NEAR BAY
             # NEAR OCEAN
             #3. Check column names
-
+ 
 
             validation_status = True
             return validation_status 
@@ -90,7 +90,7 @@ class DataValidation:
 
             profile.calculate(train_df,test_df)
 
-            report = json.loads(profile.json())
+            report = json .loads(profile.json())
 
             report_file_path = self.data_validation_config.report_file_path
             report_dir = os.path.dirname(report_file_path)
